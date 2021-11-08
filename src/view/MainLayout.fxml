@@ -11,7 +11,7 @@
 
 <AnchorPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainController">
    <children>
-      <Pane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="240.0" styleClass="container">
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="367.0" prefWidth="240.0" styleClass="container">
          <children>
             <Button layoutX="179.0" layoutY="157.0" mnemonicParsing="false" onAction="#addTodo" styleClass="btn" text="등록" />
             <DatePicker fx:id="datePicker" layoutX="59.0" layoutY="65.0" prefHeight="23.0" prefWidth="162.0" />
@@ -31,6 +31,5 @@
             <Button layoutX="231.0" layoutY="330.0" mnemonicParsing="false" onAction="#delTodo" styleClass="btn" text="삭제" />
             <Button layoutX="159.0" layoutY="330.0" mnemonicParsing="false" styleClass="btn" text="보기" />
          </children></Pane>
-      <Pane layoutX="14.0" layoutY="224.0" prefHeight="162.0" prefWidth="240.0" styleClass="container" />
    </children>
 </AnchorPane>
