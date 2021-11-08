@@ -1,9 +1,0 @@
-"--module-path=C:\\Users\\DICT_DEV7\\Downloads\\openjfx-11_windows-x64_bin-sdk\\javafx-sdk-11\\lib"
---add-modules=javafx.controls,javafx.fxml
--Dfile.encoding=MS949
--p
-"C:\\Users\\DICT_DEV7\\.p2\\pool\\plugins\\org.eclipse.fx.ide.css.jfx8_3.7.0.202010120832.jar;C:\\Users\\DICT_DEV7\\Downloads\\openjfx-11_windows-x64_bin-sdk\\javafx-sdk-11\\lib\\javafx.base.jar;C:\\Users\\DICT_DEV7\\Downloads\\openjfx-11_windows-x64_bin-sdk\\javafx-sdk-11\\lib\\javafx.controls.jar;C:\\Users\\DICT_DEV7\\Downloads\\openjfx-11_windows-x64_bin-sdk\\javafx-sdk-11\\lib\\javafx.fxml.jar;C:\\Users\\DICT_DEV7\\Downloads\\openjfx-11_windows-x64_bin-sdk\\javafx-sdk-11\\lib\\javafx.graphics.jar;C:\\Users\\DICT_DEV7\\Downloads\\openjfx-11_windows-x64_bin-sdk\\javafx-sdk-11\\lib\\javafx.media.jar;C:\\Users\\DICT_DEV7\\Downloads\\openjfx-11_windows-x64_bin-sdk\\javafx-sdk-11\\lib\\javafx.swing.jar;C:\\Users\\DICT_DEV7\\Downloads\\openjfx-11_windows-x64_bin-sdk\\javafx-sdk-11\\lib\\javafx.web.jar;C:\\Users\\DICT_DEV7\\Downloads\\openjfx-11_windows-x64_bin-sdk\\javafx-sdk-11\\lib\\javafx-swt.jar;C:\\Users\\DICT_DEV7\\Downloads\\mysql-connector-java-8.0.27\\mysql-connector-java-8.0.27\\mysql-connector-java-8.0.27.jar"
--classpath
-"C:\\TH\\workspace\\Todo_App\\bin"
--XX:+ShowCodeDetailsInExceptionMessages
-application.Main
