@@ -1,2 +1,6 @@
+/application/
+/domain/
 /exe/
+/test/
 /util/
+/view/
