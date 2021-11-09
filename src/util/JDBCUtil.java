@@ -10,7 +10,7 @@ public class JDBCUtil {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("µå¶óÀÌ¹ö ¾øÀ½");
+			System.out.println("ë“œë¼ì´ë²„ ì—†ìŒ");
 			return null;
 		}
 		
@@ -24,7 +24,7 @@ public class JDBCUtil {
 			con = DriverManager.getConnection(url, id, pw);
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("¿¬°á ½ÇÆĞ");
+			System.out.println("ì—°ê²° ì‹¤íŒ¨");
 		}
 		return con;
 		
