@@ -27,5 +27,6 @@ public class JDBCUtil {
 			System.out.println("연결 실패");
 		}
 		return con;
+		
 	}
 }
