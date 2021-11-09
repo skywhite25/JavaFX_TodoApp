@@ -7,7 +7,7 @@ public class AppUtil {
 
 	public static void alert(String msg, String header) {
 		Alert alert = new Alert(AlertType.INFORMATION);
-		alert.setTitle("¾Ë¸²");
+		alert.setTitle("ì•Œë¦¼");
 		alert.setHeaderText(header);
 		alert.setContentText(msg);
 		
