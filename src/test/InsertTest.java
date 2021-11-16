@@ -14,7 +14,7 @@ public class InsertTest {
 		
 		Connection con = db.getConnection();
 		if(con == null) {
-			System.out.println("¿¬°á ½ÇÆĞ");
+			System.out.println("DB ì—°ê²° ì˜¤ë¥˜ ë°œìƒ");
 			return;
 		}
 		
@@ -23,17 +23,17 @@ public class InsertTest {
 		
 		try {
 			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, "Å×½ºÆ®");
+			pstmt.setString(1, "í…ŒìŠ¤íŠ¸");
 			pstmt.setDate(2, Date.valueOf(LocalDate.now()));
 			int cnt = pstmt.executeUpdate();
 			if(cnt == 0) {
-				System.out.println("µ¥ÀÌÅÍ »ğÀÔ ½ÇÆĞ");
+				System.out.println("ë°ì´í„° ì‚½ì… ì‹¤íŒ¨");
 				return;
 			}
 		
 		} catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("µ¥ÀÌÅÍ »ğÀÔ ½ÇÆĞ");
+			System.out.println("ë°ì´í„° ì‚½ì… ì‹¤íŒ¨");
 			return;
 		
 		} finally {

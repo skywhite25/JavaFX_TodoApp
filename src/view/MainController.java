@@ -38,7 +38,7 @@ public class MainController {
 		
 		Connection con = db.getConnection();
 		if(con == null) {
-			AppUtil.alert("DB ¿¬°á ½ÇÆĞ", null);
+			AppUtil.alert("DB ì—°ê²° ì‹¤íŒ¨", null);
 			return;
 		}
 		
@@ -58,7 +58,7 @@ public class MainController {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			AppUtil.alert("µ¥ÀÌÅÍ »ğÀÔ ½ÇÆĞ", null);
+			AppUtil.alert("ë°ì´í„° ì‚½ì… ì‹¤íŒ¨", null);
 			return;
 		}finally {
 			if(rs != null) try { rs.close(); } catch ( Exception e ){}
@@ -72,18 +72,18 @@ public class MainController {
 		String name = txtName.getText();
 		
 		if(name.isEmpty()) {
-			AppUtil.alert("ÇÒÀÏÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ¼Å¾ß ÇÕ´Ï´Ù.", null);
+			AppUtil.alert("í• ì¼ì˜ ì´ë¦„ì„ ì…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤.", null);
 			return;
 		}
 		
 		LocalDate date = datePicker.getValue();
 		if(date == null) {
-			AppUtil.alert("³¯Â¥¸¦ ÀÔ·ÂÇÏ¼¼¿ä", null);
+			AppUtil.alert("ë‚ ì§œë¥¼ ì…ë ¥í•˜ì„¸ìš”", null);
 			return;
 		}
 		Connection con = db.getConnection();
 		if(con == null) {
-			AppUtil.alert("DB¿¬°á¿¡ ½ÇÆĞÇß½À´Ï´Ù.", null);
+			AppUtil.alert("DBì—°ê²°ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.", null);
 			return;
 		}
 		PreparedStatement pstmt = null;
@@ -97,7 +97,7 @@ public class MainController {
 			pstmt.setDate(2, Date.valueOf(date));
 			int cnt = pstmt.executeUpdate();
 			if(cnt == 0) {
-				AppUtil.alert("µ¥ÀÌÅÍ »ğÀÔ ½ÇÆĞ", null);
+				AppUtil.alert("ë°ì´í„° ì‚½ì… ì‹¤íŒ¨", null);
 				return;
 			}
 			ResultSet key = pstmt.getGeneratedKeys();
@@ -106,7 +106,7 @@ public class MainController {
 			}
 		}catch (Exception e) {
 			e.printStackTrace();
-			AppUtil.alert("µ¥ÀÌÅÍ »ğÀÔ ½ÇÆĞ", null);
+			AppUtil.alert("ë°ì´í„° ì‚½ì… ì‹¤íŒ¨", null);
 			return;
 		}finally {
 			if(pstmt != null) try { pstmt.close(); } catch (Exception e) {}
@@ -123,7 +123,7 @@ public class MainController {
 			Todo todo = items.get(idx);
 			Connection con = db.getConnection();
 			if(con == null) {
-				AppUtil.alert("DB¿¬°á¿¡ ½ÇÆĞÇß½À´Ï´Ù.", null);
+				AppUtil.alert("DBì—°ê²°ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.", null);
 				return;
 			}
 			PreparedStatement pstmt = null;
@@ -133,11 +133,11 @@ public class MainController {
 				int cnt = pstmt.executeUpdate();
 				
 				if(cnt == 0) {
-					AppUtil.alert("µ¥ÀÌÅÍ »èÁ¦ ½ÇÆĞ", null);
+					AppUtil.alert("ë°ì´í„° ì‚­ì œ ì‹¤íŒ¨", null);
 					return;
 				}
 			}catch (Exception e) {
-				AppUtil.alert("µ¥ÀÌÅÍ »èÁ¦ ½ÇÆĞ", null);
+				AppUtil.alert("ë°ì´í„° ì‚­ì œ ì‹¤íŒ¨", null);
 				return;
 			} finally {
 				if(pstmt != null) try { pstmt.close(); } catch (Exception e) {}
@@ -145,7 +145,7 @@ public class MainController {
 			}
 			items.remove(idx);
 		}else {
-			AppUtil.alert("»èÁ¦ÇÒ ¾ÆÀÌÅÛÀ» ¼±ÅÃÇÏ¼¼¿ä", "¿¡·¯");
+			AppUtil.alert("ì‚­ì œí•  ì•„ì´í…œì„ ì„ íƒí•˜ì„¸ìš”", "ì—ëŸ¬");
 		}
 	}
 }

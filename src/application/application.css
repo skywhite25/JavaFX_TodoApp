@@ -1,7 +1,8 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 
 #mainPane {
-	-fx-background-color : rgba(255, 255, 0, 0.5);
+	/* -fx-background-color : rgba(255, 255, 0, 0.5); */
+	-fx-background-image: url(/resource/tata.jpg);
 	-fx-background-size : cover;
 	-fx-background-position : center center; 
 }
@@ -10,6 +11,8 @@
 	-fx-background-color : rgba(120, 120, 120, 0.7);
 	-fx-background-radius : 5px;
 }
+
+
 
 .container Label {
 	-fx-text-fill : rgba(255, 255, 255, 1);
