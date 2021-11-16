@@ -44,7 +44,7 @@ public class MainController {
 		
 		Statement stmt = null;
 		ResultSet rs = null;
-		String sql = " SELECT * FROM todo";
+		String sql = " SELECT * FROM todo order by date asc";
 		
 		try {
 			stmt = con.createStatement();
@@ -147,5 +147,9 @@ public class MainController {
 		}else {
 			AppUtil.alert("삭제할 아이템을 선택하세요", "에러");
 		}
+	}
+	
+	public void viewTodo() {
+		
 	}
 }
