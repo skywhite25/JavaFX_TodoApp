@@ -14,7 +14,7 @@ public class JDBCUtil {
 			return null;
 		}
 		
-		String url = "jdbc:mysql://127.0.0.1:3306/todoapp";
+		String url = "jdbc:mysql://localhost:3306/todoapp";
 		String id = "root";
 		String pw = "a135719";
 		

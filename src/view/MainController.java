@@ -50,10 +50,11 @@ public class MainController {
 			stmt = con.createStatement();
 			rs = stmt.executeQuery(sql);
 			while(rs.next()) {
+				int id = rs.getInt("id");
 				String memo = rs.getString("memo");
 				LocalDate date = rs.getDate("date").toLocalDate();
 				
-				Todo todo = new Todo(0, memo, date);
+				Todo todo = new Todo(id, memo, date);
 				items.add(todo);
 			}
 		} catch (Exception e) {
@@ -148,8 +149,5 @@ public class MainController {
 			AppUtil.alert("삭제할 아이템을 선택하세요", "에러");
 		}
 	}
-	
-	public void viewTodo() {
-		
-	}
+
 }

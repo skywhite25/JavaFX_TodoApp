@@ -19,7 +19,7 @@ public class InsertTest {
 		}
 		
 		PreparedStatement pstmt = null;
-		String sql = " INSERT INTO todo ('memo', 'date') VALUES( ?, ?)";
+		String sql = " INSERT INTO todo (memo, date) VALUES( ?, ?)";
 		
 		try {
 			pstmt = con.prepareStatement(sql);
